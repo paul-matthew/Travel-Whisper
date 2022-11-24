@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: #f4623a;
+  color: var(--bs-blue);
   text-decoration: underline;
 }
 a:hover {
-  color: #c34e2e;
+  color: var(--bs-blue);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -602,6 +602,8 @@ progress {
   .img-fluid {
     max-width: 100%;
     margin:10px;
+    margin-left:auto;
+    margin-right: auto;
   }}
 
 
@@ -3072,9 +3074,9 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
-  color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  color: black;
+  background-color: silver;
+  border-color: silver;
 }
 
 .btn-secondary {
@@ -3233,9 +3235,10 @@ textarea.form-control-lg {
   border-color: #f8f9fa;
 }
 .btn-light:hover {
-  color: #000;
-  background-color: #f9fafb;
-  border-color: #f9fafb;
+  background-color: silver;
+  border-color: silver;
+  color:black;
+  transition: 0.4s;
 }
 .btn-check:focus + .btn-light, .btn-light:focus {
   color: #000;
@@ -3489,11 +3492,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #f4623a;
+  color: var(--bs-blue);
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #c34e2e;
+  color: var(--bs-blue);
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -3839,7 +3842,7 @@ textarea.form-control-lg {
 }
 .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
   color: #fff;
-  background-color: #f4623a;
+  background-color: var(--bs-blue);
 }
 .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
   color: #adb5bd;
@@ -3961,7 +3964,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #f4623a;
+  color: var(--bs-blue);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4018,7 +4021,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #f4623a;
+  background-color: var(--bs-blue);
 }
 
 .nav-fill > .nav-link,
@@ -4074,6 +4077,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: fantasy;
 }
 .navbar-nav {
   display: flex;
@@ -4822,7 +4826,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #f4623a;
+  color: var(--bs-blue);
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -4853,8 +4857,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  background-color: var(--bs-blue);
+  border-color: var(--bs-blue);
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -6452,7 +6456,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #f4623a;
+  color: var(--bs-blue);
 }
 .link-primary:hover, .link-primary:focus {
   color: #c34e2e;
@@ -11350,9 +11354,10 @@ hr.divider-light {
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
-  color: #212529;
+  color: goldenrod;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
@@ -11362,10 +11367,10 @@ hr.divider-light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: var(--bs-blue);
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: var(--bs-blue) !important;
 }
 @media (min-width: 992px) {
   #mainNav {
